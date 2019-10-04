@@ -30,7 +30,7 @@ public class NavBar extends CordovaPlugin {
 			cordova.getActivity().runOnUiThread(new Runnable(){
 				@Override
 				public void run() {						
-					callbackContext.success(getNavBarHeight())			
+					callbackContext.success(getNavBarHeight());		
 				}
 			});				
 			return true;
