@@ -14,6 +14,7 @@ import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.os.Handler;
+import android.content.res.Resources;
 import java.lang.reflect.Method;
 
 public class NavBar extends CordovaPlugin {
