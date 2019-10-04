@@ -41,7 +41,7 @@ public class NavBar extends CordovaPlugin {
 
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB) 
 	private int getNavBarHeight() {
-		Resources resources = context.getResources();
+		Resources resources = this.cordova.getActivity().getApplicationContext().getResources();
 		int resourceId = resources.getIdentifier("navigation_bar_height", "dimen", "android");
 		if (resourceId > 0) {
 			return resources.getDimensionPixelSize(resourceId);
