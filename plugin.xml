@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-navbar"
+    version="1.0.31">
+	
+    <name>Cordova NavigationBar plugin</name>
+    <description>test navbar plguin</description>
+    <author>bitvalser</author>	
+    <license>MIT</license>
+    <keywords>cordova, plugin, navbar</keywords>
+ 	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+    <js-module src="www/navbar.js" name="navbar">
+        <clobbers target="window.navbar" />
+    </js-module>
+	
+    <!-- android -->
+    <platform name="android">
+	    <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NavBar" >
+                <param name="android-package" value="com.bitvalser.cordova.plugin.navbar.NavBar"/>
+            </feature>
+        </config-file>
+		
+        <source-file src="src/android/NavBar.java" target-dir="src/com/bitvalser/cordova/plugin/navbar" />
+    </platform>
+</plugin>

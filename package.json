@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-navbar",
+  "version": "1.0.31",
+  "description": "hide and auto hide navigation bar.",
+  "cordova": {
+    "id": "cordova-plugin-navbar",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitvalser/cordova-plugin-navbar.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "navbar",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "bitvalser",
+  "license": "MIT"
+}
